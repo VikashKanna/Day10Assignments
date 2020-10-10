@@ -7,3 +7,6 @@ read a b c
 
 equ1=`expr $a + $b \* $c`
 echo "First Equation Results: " $equ1
+
+equ2=`expr $a \* $b + $c`
+echo "Result of second equation:" $equ2
