@@ -24,3 +24,17 @@ ArithCompu[thirdequa]=$equ3
 ArithCompu[fourthequa]=$equ4
 
 echo "The results in Dictionary:" ${ArithCompu[@]}
+
+i=1
+for(( i=1; i<=4; i++ ))
+do
+	array[i]=${ArithCompu[$i]}
+	echo ${array[i]}
+done
+
+i=1
+for(( i=1; i<=4; i++ ))
+do
+	array[i]=${ArithCompu[$i]}
+	echo ${array[i]}
+done
