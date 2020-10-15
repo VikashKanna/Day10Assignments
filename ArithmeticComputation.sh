@@ -16,3 +16,11 @@ echo "Result of third equation: " $equ3
 
 equ4=`expr $a % $b + $c`
 echo "Result of fourth equation" $equ4
+
+declare -A ArithCompu
+ArithCompu[firstequa]=$equ1
+ArithCompu[secondequa]=$equ2
+ArithCompu[thirdequa]=$equ3
+ArithCompu[fourthequa]=$equ4
+
+echo "The results in Dictionary:" ${ArithCompu[@]}
